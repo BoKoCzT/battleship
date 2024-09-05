@@ -2,7 +2,7 @@
 use std::io::{self, write};
 use rand::rng;
 
-// We define size of the game board
+// Defines size of the game board
 const BOARD_SIZE: usize = 10;
 
 struct Board{
@@ -16,6 +16,21 @@ enum CellState{
     Hit,
     Miss
 }
+
+impl Board{
+    fn new() -> Self{
+        Board{
+            grid: [[CellState::Empty;BOARD_SIZE];BOARD_SIZE],
+            ships: vec::new(),
+        }
+    }
+}
+
+// This function places randomly ships on the game board.
+fn place_ship(&mut self, size: usize){
+    let mut rng = rand::thread_rng();
+}
+
 
 fn main() {
     loop {
