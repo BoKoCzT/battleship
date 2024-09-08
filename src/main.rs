@@ -1,3 +1,6 @@
+// A simple Battleship game in Rust Language
+// for learning use
+
 // Imports of needed libraries
 use std::io::{self, write};
 use rand::rng;
